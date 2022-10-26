@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, ScrollView, Button} from 'react-native';
 
 function Index({navigation}) {
   return (
@@ -8,6 +8,14 @@ function Index({navigation}) {
         <Button
           title="ActivityIndicator"
           onPress={() => navigation.navigate('ActivityIndicator')}
+        />
+        <Button
+          title="Buttons "
+          onPress={() => navigation.navigate('BtnPage')}
+        />
+        <Button
+          title="FlatList "
+          onPress={() => navigation.navigate('FlatList')}
         />
       </ScrollView>
     </SafeAreaView>
