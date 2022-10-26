@@ -9,6 +9,7 @@ import ImageBackgroundComp from './Screens/ImageBackgroundComp';
 import ImagesComponent from './Screens/ImagesComponent';
 import Index from './Screens/Index';
 import ModalComponent from './Screens/ModalComponent';
+import PressableComponent from './Screens/PressableComponent';
 function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -28,6 +29,7 @@ function App() {
         <Stack.Screen name="Images" component={ImagesComponent} />
         <Stack.Screen name="ImageBackground" component={ImageBackgroundComp} />
         <Stack.Screen name="Modal" component={ModalComponent} />
+        <Stack.Screen name="Pressable" component={PressableComponent} />
       </Stack.Navigator>
     </NavigationContainer>
   );
