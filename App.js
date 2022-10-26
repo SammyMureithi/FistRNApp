@@ -1,19 +1,24 @@
-import React, {useState} from 'react';
-import {View, Text, Button} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import React from 'react';
+import ActivityIndicatorPage from './Screens/ActivityIndicator';
+import Index from './Screens/Index';
 function App() {
-  const [counter, setCounter] = useState(0);
-  function handleClick() {
-    setCounter(prevCount => prevCount + 1);
-  }
+  const Stack = createNativeStackNavigator();
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Hello</Text>
-      <Button onPress={handleClick} title={`Click ${counter}`}></Button>
-      <Text>
-        My First Ever React Native app after debuging for two good days , But I
-        👏 for mySelf,I can do It
-      </Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Index}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ActivityIndicator"
+          component={ActivityIndicatorPage}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
