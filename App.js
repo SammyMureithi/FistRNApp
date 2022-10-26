@@ -1,9 +1,11 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
+import {ImageComponent} from 'react-native';
 import ActivityIndicatorPage from './Screens/ActivityIndicator';
 import ButtonPages from './Screens/ButtonPages';
 import FlatListComponet from './Screens/FlatList';
+import ImagesComponent from './Screens/ImagesComponent';
 import Index from './Screens/Index';
 function App() {
   const Stack = createNativeStackNavigator();
@@ -21,6 +23,7 @@ function App() {
         />
         <Stack.Screen name="BtnPage" component={ButtonPages} />
         <Stack.Screen name="FlatList" component={FlatListComponet} />
+        <Stack.Screen name="Images" component={ImagesComponent} />
       </Stack.Navigator>
     </NavigationContainer>
   );
