@@ -8,6 +8,7 @@ import FlatListComponet from './Screens/FlatList';
 import ImageBackgroundComp from './Screens/ImageBackgroundComp';
 import ImagesComponent from './Screens/ImagesComponent';
 import Index from './Screens/Index';
+import ModalComponent from './Screens/ModalComponent';
 function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -26,6 +27,7 @@ function App() {
         <Stack.Screen name="FlatList" component={FlatListComponet} />
         <Stack.Screen name="Images" component={ImagesComponent} />
         <Stack.Screen name="ImageBackground" component={ImageBackgroundComp} />
+        <Stack.Screen name="Modal" component={ModalComponent} />
       </Stack.Navigator>
     </NavigationContainer>
   );

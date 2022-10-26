@@ -22,6 +22,7 @@ function Index({navigation}) {
           title="ImagesBackground"
           onPress={() => navigation.navigate('ImageBackground')}
         />
+        <Button title="Modal" onPress={() => navigation.navigate('Modal')} />
       </ScrollView>
     </SafeAreaView>
   );
