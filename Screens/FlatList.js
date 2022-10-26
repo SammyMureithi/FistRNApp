@@ -1,7 +1,10 @@
 import React from 'react';
+import {useState} from 'react';
 import {View, Text, Button, FlatList} from 'react-native';
 
 function FlatListComponet() {
+  const [count, setCount] = useState(0);
+  const [refresh, setRefresh] = useState(false);
   const DATA = [
     {
       id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
@@ -31,13 +34,23 @@ function FlatListComponet() {
     </View>
   );
   const renderItem = ({item}) => <Item title={item.title} id={item.title} />;
+  function handleRefresh() {
+    setCount(prevCount => prevCount + 1);
+    setRefresh(!prevRefresh);
+  }
   return (
     <View>
+      <Text>Refresh Count{count}</Text>
       <FlatList
         data={DATA}
+        horizontal={true}
+        inverted={true}
+        refreshing={refresh}
+        onRefresh={() => handleRefresh}
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
+      <Text>Refresh Count{count}</Text>
     </View>
   );
 }
