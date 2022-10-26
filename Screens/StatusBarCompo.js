@@ -9,7 +9,12 @@ function StatusBarCompo() {
   }
   return (
     <View>
-      <StatusBar hidden={status} backgroundColor="#61dafb" animated={true} />
+      <StatusBar
+        hidden={status}
+        backgroundColor="#61dafb"
+        animated={true}
+        translucent={true}
+      />
       <Text>Status Bar</Text>
       <Button title={status ? 'Show' : 'Hide'} onPress={handleChangeStatus} />
     </View>

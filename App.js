@@ -13,6 +13,8 @@ import PressableComponent from './Screens/PressableComponent';
 import RefreshControlComp from './Screens/RefreshControlComp';
 import ScrollViewCompo from './Screens/ScrollViewCompo';
 import StatusBarCompo from './Screens/StatusBarCompo';
+import SwitchCompo from './Screens/SwitchCompo';
+import TextCompo from './Screens/TextCompo';
 function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -40,6 +42,8 @@ function App() {
           component={StatusBarCompo}
           options={{headerShown: false}}
         />
+        <Stack.Screen name="Switch" component={SwitchCompo} />
+        <Stack.Screen name="Text" component={TextCompo} />
       </Stack.Navigator>
     </NavigationContainer>
   );
