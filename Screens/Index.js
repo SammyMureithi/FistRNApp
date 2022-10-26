@@ -31,6 +31,10 @@ function Index({navigation}) {
           title="RefreshControl"
           onPress={() => navigation.navigate('RefreshControl')}
         />
+        <Button
+          title="ScrollView"
+          onPress={() => navigation.navigate('ScrollView')}
+        />
       </ScrollView>
     </SafeAreaView>
   );
