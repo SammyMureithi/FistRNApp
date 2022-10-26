@@ -5,6 +5,7 @@ import {ImageComponent} from 'react-native';
 import ActivityIndicatorPage from './Screens/ActivityIndicator';
 import ButtonPages from './Screens/ButtonPages';
 import FlatListComponet from './Screens/FlatList';
+import ImageBackgroundComp from './Screens/ImageBackgroundComp';
 import ImagesComponent from './Screens/ImagesComponent';
 import Index from './Screens/Index';
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Stack.Screen name="BtnPage" component={ButtonPages} />
         <Stack.Screen name="FlatList" component={FlatListComponet} />
         <Stack.Screen name="Images" component={ImagesComponent} />
+        <Stack.Screen name="ImageBackground" component={ImageBackgroundComp} />
       </Stack.Navigator>
     </NavigationContainer>
   );

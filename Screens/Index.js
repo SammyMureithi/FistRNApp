@@ -18,6 +18,10 @@ function Index({navigation}) {
           onPress={() => navigation.navigate('FlatList')}
         />
         <Button title="Images" onPress={() => navigation.navigate('Images')} />
+        <Button
+          title="ImagesBackground"
+          onPress={() => navigation.navigate('ImageBackground')}
+        />
       </ScrollView>
     </SafeAreaView>
   );
