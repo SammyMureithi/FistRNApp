@@ -16,6 +16,7 @@ import StatusBarCompo from './Screens/StatusBarCompo';
 import SwitchCompo from './Screens/SwitchCompo';
 import TextCompo from './Screens/TextCompo';
 import TextInputComp from './Screens/TextInputComp';
+import TouchableOpacityCompo from './Screens/TouchableOpacity';
 function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -46,6 +47,10 @@ function App() {
         <Stack.Screen name="Switch" component={SwitchCompo} />
         <Stack.Screen name="Text" component={TextCompo} />
         <Stack.Screen name="TextInput" component={TextInputComp} />
+        <Stack.Screen
+          name="TouchableOpacity"
+          component={TouchableOpacityCompo}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

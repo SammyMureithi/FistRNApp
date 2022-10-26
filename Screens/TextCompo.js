@@ -9,7 +9,8 @@ function TextCompo() {
         Here we can have{' '}
         <Text style={{color: 'red', fontStyle: 'italic'}}>nested Text</Text>
       </Text>
-      <Text dataDetectorType={'phoneNumber'}>0768397675</Text>
+      <Text dataDetectorType={'email'}>sammymureithi20@gmail.com</Text>
+      <Text dataDetectorType={'phoneNumber'}>254768397675</Text>
     </View>
   );
 }

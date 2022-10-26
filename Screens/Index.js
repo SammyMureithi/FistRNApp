@@ -45,6 +45,10 @@ function Index({navigation}) {
           title="TextInput"
           onPress={() => navigation.navigate('TextInput')}
         />
+        <Button
+          title="TouchableOpacity"
+          onPress={() => navigation.navigate('TouchableOpacity')}
+        />
       </ScrollView>
     </SafeAreaView>
   );
