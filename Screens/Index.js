@@ -35,6 +35,10 @@ function Index({navigation}) {
           title="ScrollView"
           onPress={() => navigation.navigate('ScrollView')}
         />
+        <Button
+          title="StatusBar"
+          onPress={() => navigation.navigate('StatusBar')}
+        />
       </ScrollView>
     </SafeAreaView>
   );

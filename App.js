@@ -12,6 +12,7 @@ import ModalComponent from './Screens/ModalComponent';
 import PressableComponent from './Screens/PressableComponent';
 import RefreshControlComp from './Screens/RefreshControlComp';
 import ScrollViewCompo from './Screens/ScrollViewCompo';
+import StatusBarCompo from './Screens/StatusBarCompo';
 function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -34,6 +35,11 @@ function App() {
         <Stack.Screen name="Pressable" component={PressableComponent} />
         <Stack.Screen name="RefreshControl" component={RefreshControlComp} />
         <Stack.Screen name="ScrollView" component={ScrollViewCompo} />
+        <Stack.Screen
+          name="StatusBar"
+          component={StatusBarCompo}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
