@@ -41,6 +41,10 @@ function Index({navigation}) {
         />
         <Button title="Switch" onPress={() => navigation.navigate('Switch')} />
         <Button title="Text" onPress={() => navigation.navigate('Text')} />
+        <Button
+          title="TextInput"
+          onPress={() => navigation.navigate('TextInput')}
+        />
       </ScrollView>
     </SafeAreaView>
   );
